@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<html lang="es"><!--Aqui inicia mi página con la etiqueta html-->
+<head><!--Aqui en el head esta todo lo que no se ve en la página, pero lo hace funcional.-->
+    <!--Con los metadatos puedo colocar caracteres epeciales, dar información al SEO para posicionamiento web-->
+  <meta charset="UTF-8"> <!--Permite caracteres especiales--> 
+  <meta name="description" content="Musical para Navidad, boleros y big bang de Luis Miguel">
+  <meta name="author" content="Alan Jandette">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css"> <!--Enlazo mi hoja de estilos-->
 <title>Musical Pame</title>
 </head>
 <body>
+    <div class="container-musical">
+        <img src="carla_manneh-owl-10505611_1920.jpg" alt="Owl" class="img">
+        <h1>Musical Pame</h1>
+        <p class="descripcion">Escucha los mejores boleros de Luis Miguel</p>
 
-<h1>Musical Pame</h1>
-<p>Escucha los mejores boleros de Luis Miguel</p>
+        
 
+  
+        <div class="lista-canciones">
+          <!--CANCIÓN 1-->
+          <div class="canciones">
+            <img src="lmnavidad.jpg" alt="Luis Miguel Navidad" class="img-cancion">
+            <p>🎄 Santa Claus llegó a la ciudad</p>
+             <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Luis Miguel - Santa Claus Llego A La Ciudad (Official Music Video).mp3" type="audio/mpeg">
+                </audio>
+          </div>
+           <div class="canciones">
+            <p>🚪 La Puerta</p>
+             <audio controls src="La Puerta.mp3"></audio>
+             </div>
+          <div class="canciones">
+            <p>3. Encadenados</p>
+             <audio controls src="Encadenados.mp3"></audio>
+             </div> 
+          <div class="canciones">
+            <p>4. Todo Y Nada</p>
+             <audio controls src="Todo Y Nada.mp3"></audio>
+             </div>     
+          <div class="canciones">
+            <p>5. Perfidia</p>
+             <audio controls src="Perfidia.mp3"></audio>
+             </div>
+        
+
+
+        </div>
+        </div>
 </body>
 </html>
