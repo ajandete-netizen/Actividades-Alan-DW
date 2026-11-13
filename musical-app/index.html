@@ -7,6 +7,7 @@
   <meta name="author" content="Alan Jandette">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css"> <!--Enlazo mi hoja de estilos-->
 <title>Musical Pame</title>
 </head>
@@ -15,18 +16,20 @@
         <img src="carla_manneh-owl-10505611_1920.jpg" alt="Owl" class="img">
         <h1>Musical Pame</h1>
         <p class="descripcion">Escucha los mejores boleros de Luis Miguel</p>
+        <!--Aquí empieza la lista de canciones-->
 
         
 
   
-        <div class="lista-canciones">
-          <!--CANCIÓN 1-->
-          <div class="canciones">
-            <img src="lmnavidad.jpg" alt="Luis Miguel Navidad" class="img-cancion">
+       <!--  <div class="lista-canciones">-->
+
+          
+          <!-- <div class="canciones">
+            <img class="imgcanciones" src="lmnavidad.jpg" alt="Luis Miguel Navidad" class="img-cancion">
             <p>🎄 Santa Claus llegó a la ciudad</p>
-             <audio controls class="audio-player">
+             <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Luis Miguel - Santa Claus Llego A La Ciudad (Official Music Video).mp3" type="audio/mpeg">
+                    <!-- <source src="Luis Miguel - Santa Claus Llego A La Ciudad (Official Music Video).mp3" type="audio/mpeg">
                 </audio>
           </div>
            <div class="canciones">
@@ -34,21 +37,39 @@
              <audio controls src="La Puerta.mp3"></audio>
              </div>
           <div class="canciones">
-            <p>3. Encadenados</p>
-             <audio controls src="Encadenados.mp3"></audio>
-             </div> 
+            <p>⛓️‍💥 Encadenados</p>
+             <audio controls src="Encadenados.mp3"></audio> -->
+             <!-- </div> 
           <div class="canciones">
-            <p>4. Todo Y Nada</p>
+            <p>❤️‍🔥 Todo Y Nada</p>
              <audio controls src="Todo Y Nada.mp3"></audio>
              </div>     
           <div class="canciones">
-            <p>5. Perfidia</p>
+            <p>🖤 Perfidia</p>
              <audio controls src="Perfidia.mp3"></audio>
              </div>
         
+<!-- UNA SOLA CAJA DE REPRODUCTOR -->
+      <div class="canciones">
+        <!-- 1. Le ponemos id="nombre-cancion" para que JS cambie el texto -->
+        <p id="nombre-cancion">🎄Burrito savanero</p>
+        
+        <!--  Un solo audio con id="audio-player" -->
+        <audio id="audio-player" controls class="audio-player">
+          <source src="miburrito.mp3" type="audio/mpeg">
+        </audio>
 
 
+        <!-- Agregamos los botones para avanzar y retroceder -->
+        <div class="controles">
+          <button id="btn-anterior">⏮ Anterior</button>
+          <button id="btn-siguiente">Siguiente ⏭</button>
         </div>
+      </div>
+
+        </div> 
         </div>
+
+<script src="script.js"></script>        
 </body>
 </html>
